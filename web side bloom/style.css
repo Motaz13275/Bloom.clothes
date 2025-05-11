@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+body
+{
+    height: 100%;
+    overflow-X: hidden;
+    background: #180413;
+}
+
+header
+{
+    width: 100%;
+    display: flex;
+    padding: 3vh;
+    height: max-content;
+    position: fixed;
+    top: 0;
+}
+
+
+.nav-links
+{
+    display: flex;
+    margin-right: 5vh;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav-item
+{
+    margin-right: 5vh;
+    transition: 0.4s;
+    animation: alblack 2s ease;
+}
+
+.nav-item a
+{
+    text-decoration: none;
+    font-family: "Tajawal", serif;
+    font-size: 1.8vh;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.nav-item:hover
+{
+    transform: scale(1.1);
+}
+
+@keyframes alblack {
+    0%   {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+
+  .logoname
+  {
+    position: relative;
+    top: -1vh;
+    text-align: center;
+    background: rgba(255, 255, 0, 0);
+    min-width: 10%;
+    max-width: max-content;
+    font-family: "Poppins", serif;
+    color: #fff;
+    font-size: 2vh;
+    letter-spacing: 0.5vh;
+    font-weight: 400;
+  }
+  
+  
+.wave {
+    background: rgba(64, 32, 77, 0.25);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+.back
+{
+    background: #ffffff00;
+    margin: 4vh;
+    height: max-content;
+    padding: 1vh;
+}
+
+section
+{
+  margin-top: 20vh;
+  text-align: center;
+}
+
+section h1
+{
+    font-family: "Tajawal", serif;
+    font-size: 5vh;
+    font-weight: 500;
+    color: #fff;
+}
+
+section p
+{
+    font-family: "Tajawal", serif;
+    font-size: 2vh;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 1.5vh;
+    color: #d9d9d9;
+}
+
+.cards{
+    width: 97.5%;
+    background: #1c1d1d00;
+    display: flex;
+    justify-content: center;
+    padding: 3vh;
+    
+}
+
+
+.cards .card
+{
+    display: grid;
+    justify-content: center;
+    background: linear-gradient(to right bottom, #2b0d2c , #2b0c29);
+    margin: 3vh;
+    padding: 4vh;
+    border-radius: 1vh;
+    box-shadow:  0 0 15px 2px #202c37;
+    outline: 1vh solid #5f2e7a2d;
+    height: max-content;
+    transition: transform 0.3s ease-in-out; /* يجعل الحركة سلسة */
+}
+.cards  .card:hover {
+    transform: scale(1.1); /* تكبير الصورة بنسبة 10% */
+}
+
+.cards .card i
+{
+font-size: 4.5vh;
+margin-bottom: 1vh;
+color: #ffffffb7;
+}
+
+.cards .card h4
+{
+    color: #a359e9;
+    font-family: "Tajawal", serif;
+    font-size: 2vh;
+}
+
+.cards .card p
+{
+    font-size: 1.5vh;
+    color: #fcfafa;
+}
+.imag{
+
+    height: auto;
+    width: 100%;
+    background-color: #00dbb700;
+    display: flex;
+    justify-content: center;
+margin-top: 9vh;
+    
+}
+.imag img{
+    height: 35vh;
+    width: 35vh;
+    margin: 1vh;
+    border-radius: 2vh;
+    border: 10px solid rgb(49, 36, 61);
+    transition: transform 0.3s ease-in-out; /* يجعل الحركة سلسة */
+}
+
+.imag img:hover {
+    transform: scale(1.1); /* تكبير الصورة بنسبة 10% */
+}
